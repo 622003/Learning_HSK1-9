@@ -1,5 +1,6 @@
 
 import React, { useState, useMemo } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import VocabularyList from './components/VocabularyList';
@@ -119,6 +120,8 @@ const App: React.FC = () => {
         }
         .rounded-2.5xl { border-radius: 1.25rem; }
       `}</style>
+
+      <SpeedInsights />
     </div>
   );
 };
